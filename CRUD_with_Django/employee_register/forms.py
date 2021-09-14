@@ -1,12 +1,12 @@
 from django import forms
-from .models import employee
+from .models import Employee
 
 
 
 class EmployeeForm(forms.ModelForm):
 
     class Meta:
-        model = employee
+        model = Employee
         fields = ('fullname','mobile','emp_code','position')
         labels = {
             'fullname': 'Full Name',
